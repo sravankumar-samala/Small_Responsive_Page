@@ -138,6 +138,16 @@ button a {
   border-radius: 20px;
   background-color: var(--clr-white);
   margin-block: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.nav-input:checked ~ .nav-label .burger-lines:nth-child(1) {
+  transform: translateY(8px) rotate(225deg);
+}
+.nav-input:checked ~ .nav-label .burger-lines:nth-child(3) {
+  transform: translateY(-8px) rotate(-225deg);
+}
+.nav-input:checked ~ .nav-label .burger-lines:nth-child(2) {
+  opacity: 0;
 }
 .nav-input {
   display: none;
